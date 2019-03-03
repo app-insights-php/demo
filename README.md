@@ -1,58 +1,34 @@
-Symfony Demo Application
+Symfony App Insights Demo Application
 ========================
 
-The "Symfony Demo Application" is a reference application created to show how
-to develop applications following the [Symfony Best Practices][1].
+The "Symfony App Insights Demo Application" is fork of official [Symfony Demo Application](https://github.com/symfony/demo)
+with example usage of [App Insights PHP](https://github.com/app-insights-php).
 
-Requirements
+What Is Application Insights
 ------------
 
-  * PHP 7.1.3 or higher;
-  * PDO-SQLite PHP extension enabled;
-  * and the [usual Symfony application requirements][2].
+With [App Insights PHP](https://github.com/app-insights-php) it works out of the box with your 
+existing or just created application. App Insights can bring you overview on things 
+you are missing now with almost zero config. 
 
-Installation
+Perfect for new projects or smaller teams that does not have dedicated devops & analytics teams
+to setup custom tools or that don't have money to pay for alternative monitoring tools. 
+
+[Quick Intro](https://docs.microsoft.com/pl-pl/azure/azure-monitor/app/app-insights-overview)  
+[Pricing](https://azure.microsoft.com/en-us/pricing/details/monitor/)
+
+You pay for amount of data you send to App Insights. 
+
+Application Setup
 ------------
 
-Install the [Symfony client][4] binary and run this command:
+Please read [Symfony Demo Application Readme](https://github.com/symfony/demo).
 
-```bash
-$ symfony new --demo my_project
-```
+App Insights PHP Configuration
+------------
 
-Alternatively, you can use Composer:
+Before you start you might want to create [Microsoft Azure Free Account](https://azure.microsoft.com/en-us/free/free-account-faq/).
 
-```bash
-$ composer create-project symfony/symfony-demo my_project
-```
+Please follow Microsoft creating new instance of [App Insights guide](https://docs.microsoft.com/en-us/azure/azure-monitor/app/create-new-resource).
 
-Usage
------
 
-There's no need to configure anything to run the application. If you have
-installed the [Symfony client][4] binary, run this command to run the built-in
-web server and access the application in your browser at <http://localhost:8000>:
-
-```bash
-$ cd my_project/
-$ symfony serve
-```
-
-If you don't have the Symfony client installed, run `php bin/console server:run`.
-Alternatively, you can [configure a web server][3] like Nginx or Apache to run
-the application.
-
-Tests
------
-
-Execute this command to run tests:
-
-```bash
-$ cd my_project/
-$ ./bin/phpunit
-```
-
-[1]: https://symfony.com/doc/current/best_practices/index.html
-[2]: https://symfony.com/doc/current/reference/requirements.html
-[3]: https://symfony.com/doc/current/cookbook/configuration/web_server_configuration.html
-[4]: https://symfony.com/download
