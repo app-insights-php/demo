@@ -15,6 +15,11 @@
         {% endblock %}
 
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        {% if app.user %}
+            {{ app_insights_php(app.user.username) }}
+        {% else %}
+            {{ app_insights_php() }}
+        {% endif %}
     </head>
 
     <body id="{% block body_id %}{% endblock %}">
